@@ -1,0 +1,5 @@
+CREATE FUNCTION increment(id INT) RETURNS INT AS $$
+BEGIN
+  RETURN a+1;
+ END; $$
+LANGUAGE plpgsql;
