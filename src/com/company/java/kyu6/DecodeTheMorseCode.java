@@ -1,5 +1,8 @@
 package com.company.java.kyu6;
 
+/**
+ * you can access the preloaded Morse code table through MorseCode.get(code) - codewars
+ **/
 public class DecodeTheMorseCode {
     public static String decode(String morseCode) {
         String[] str = morseCode.split(" ");
