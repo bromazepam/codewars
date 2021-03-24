@@ -1,13 +1,13 @@
 # codewars 
 These are my solutions to codewars code katas. My codewars profile
- can be found [here] (https://www.codewars.com/users/bromazepam). 
+ can be found [here](https://www.codewars.com/users/bromazepam). 
  
  The files are grouped by programming language and difficulty, 8 kyu being the easiest and 1 kyu the hardest
  . Each file name usually alludes to the topic of the problem.
  Languages used :
 
- *  [Java] (https://github.com/bromazepam/codewars/tree/master/src/com/company/java)
- *  [SQL] (https://github.com/bromazepam/codewars/tree/master/src/com/company/sql) 
+ * [Java](https://github.com/bromazepam/codewars/tree/master/src/com/company/java)
+ * [SQL](https://github.com/bromazepam/codewars/tree/master/src/com/company/sql) 
 
 On Codewars, there are two different scales you can level up by
  doing different things:
