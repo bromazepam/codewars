@@ -1,4 +1,4 @@
-# codewars 
+# Codewars 
 These are my solutions to codewars code katas. My codewars profile
  can be found [here](https://www.codewars.com/users/bromazepam). 
  
