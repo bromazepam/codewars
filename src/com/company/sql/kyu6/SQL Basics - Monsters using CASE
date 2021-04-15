@@ -1,0 +1,14 @@
+SELECT
+    t.id as id,
+    t.heads as heads,
+    t.arms as arms,
+    p.legs as legs,
+    p.tails as tails,
+CASE
+    WHEN heads>arms then 'BEAST'
+    WHEN tails>legs then 'BEAST'
+    ELSE 'WEIRDO'
+END as species
+FROM top_half t, bottom_half p
+WHERE t.id = p.id
+ORDER BY species
