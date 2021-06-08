@@ -12,7 +12,7 @@
 #     transaction_date
 #
 # resultant table schema
-# 
+#
 #     location (EU for eusales and US for ussales)
 #     id
 #     name
