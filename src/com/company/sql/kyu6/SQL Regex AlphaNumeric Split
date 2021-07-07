@@ -1,0 +1,6 @@
+SELECT project,
+       regexp_replace(address, '\d', '', 'g') AS letters,
+       regexp_replace(address, '\D', '', 'g') AS numbers
+FROM repositories
+
+-- 'g' instructs the function to remove all alphabets, not just the first one
