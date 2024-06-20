@@ -1,0 +1,24 @@
+#For this challenge you need to create a simple SELECT statement. Your task is to calculate the MIN, MEDIAN and MAX scores of the students from the results table.
+#Tables and relationship below:
+#Resultant table:
+#
+#    min
+#    median
+#    max
+
+SELECT
+    MIN(score) AS min,
+    (
+        SELECT CAST(AVG(score) AS FLOAT)
+        FROM (
+            SELECT score
+            FROM (
+                SELECT score, ROW_NUMBER() OVER(ORDER BY score) AS rn, COUNT(*) OVER() AS cnt
+                FROM result
+            ) t
+            WHERE rn IN ((cnt+1)/2, (cnt+2)/2)
+        ) s
+    ) AS median,
+    MAX(score) AS max
+FROM result;
+
